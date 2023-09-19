@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Exercise2Activity">
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HamburguesaApp"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textViewType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo" />
+
+    <Spinner
+        android:id="@+id/spinnerType"
+        android:layout_width="181dp"
+        android:layout_height="wrap_content"
+        android:contentDescription="Selecciona el tipo de hamburguesa"
+        android:entries="@array/burger_types" />
+
+    <TextView
+        android:id="@+id/textViewExtraCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Extra queso" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCheese"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radioButtonYes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sí" />
+
+        <RadioButton
+            android:id="@+id/radioButtonNo"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/textViewQuantity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cantidad" />
+
+    <EditText
+        android:id="@+id/editTextQuantity"
+        android:layout_width="109dp"
+        android:layout_height="wrap_content"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/buttonCalculateTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calcular Total" />
+
+    <TextView
+        android:id="@+id/textViewResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respuesta"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver" />
+</LinearLayout>

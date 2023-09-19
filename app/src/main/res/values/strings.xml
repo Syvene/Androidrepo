@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TrabajoReal</string>
+    <string name="burger_simple">Simple</string>
+    <string name="burger_double">Doble</string>
+    <string-array name="burger_types">
+        <item>@string/burger_simple</item>
+        <item>@string/burger_double</item>
+    </string-array>
+</resources>

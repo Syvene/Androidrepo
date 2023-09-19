@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Exercise1Activity">
+
+    <EditText
+        android:id="@+id/editTextAmount"
+        android:layout_width="match_parent"
+        android:layout_height="81dp"
+        android:hint="Ingrese la cantidad" />
+
+
+    <RadioGroup
+        android:id="@+id/radioGroupConversion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/radioButtonToDollar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="De Pesos a Dólares" />
+
+        <RadioButton
+            android:id="@+id/radioButtonToPesos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="De Dólares a Pesos" />
+
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonConvert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Convertir" />
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volver" />
+
+
+</LinearLayout>
